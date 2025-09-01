@@ -1,6 +1,9 @@
 def check_vowels():
-    # Código a implementar utilizando input.
+    nombre = input("Ingrese un nombre: ")
 
+    nombre = nombre.lower()
 
-# Para verificar este ejercicio ejecutar el comando
-# `pytest tp3_in_string_test.py` o `python tp3_in_string_test.py`
+    for vocal in "aeiou":
+
+        print(f"Contiene {vocal}: {vocal in nombre}")
+check_vowels()
